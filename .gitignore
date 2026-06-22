@@ -1,0 +1,37 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock.orig
+
+# Node / frontend build
+node_modules/
+crates/bkp-recover/ui/dist/
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Build artifacts / installers
+/staging
+/dist
+*.msi
+*.deb
+*.dmg
+*.pkg
+*.log
+
+# Secrets - OAuth client credentials baked in at build time. Never commit.
+.env
+.env.local
+
+# Claude working instructions - local only, never published
+CLAUDE.md
+
+# Verbatim copy from the proprietary main repo - held pending an
+# explicit publish decision (do not commit without sign-off).
+docs/DATA_FORMAT.md
+
+# i18n pipeline working file
+locales/_stale_translations.csv
